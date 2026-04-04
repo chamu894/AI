@@ -11,5 +11,6 @@ function calculate() {
 
     let activationOutput = 1 / (1 + Math.exp(-weightedSum));
     console.log(activationOutput);
+    
 
 }
