@@ -8,7 +8,7 @@ function test(){
     ];
 
     for(let x=0; x<data.length; x++){
-        console.log(data[x][0]);
+        console.log(data[x]);
     }
 
 }
