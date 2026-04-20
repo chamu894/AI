@@ -1,7 +1,15 @@
 import ollama from 'ollama'
+import express from 'express'
 
-const response = await ollama.chat({
+const app = express();
+
+app.get('/test', async (req, res) => {
+
+    const response = await ollama.chat({
   model: 'llama3.1:8b',
   messages: [{ role: 'user', content: 'Why is the capital of Sri lanka?' }],
 });
-console.log(response.message.content);
+res.send(response.message.content);
+
+});
+
