@@ -1,6 +1,6 @@
-def a():
-    print("a")
-    print("Hello")
+import tkinter as tk
 
-print("Test")
-a()   
+window = tk.Tk()
+window.title("Hello!")
+
+window.mainloop()
